@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c4dce0;
+  }
+  
+  .header {
+    padding: 20px; /* Add padding for spacing */
+    background-color: black; /* Background color */
+    display: flex;
+    justify-content: flex-start; /* Align My Portfolio to the left */
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 24px; /* Adjust font size */
+    color: white; /* Text color */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .background-image {
+    background-image: url('https://img.freepik.com/free-photo/blue-toned-collection-paper-sheet-with-copy-space_23-2148320445.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1710115200&semt=ais');
+    background-size: cover;
+    background-position: center;
+    background-image: cover;
+    height: 90vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+  }
+  
+  .know-more-button {
+    background-color: #343a40;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px; /* Add margin for spacing */
+    transition: background-color 0.3s, color 0.3s; /* Add transition */
+  }
+  .more-projects{
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 18px; /* Adjust font size */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration:none;
+    transition: background-color 0.3s;
+  }
+  
+  .section {
+    display: none; /* Initially hide all sections */
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 0.5s ease-in-out; /* Add transition */
+  }
+  
+  .section.active {
+    display: block; /* Show section when active class is applied */
+    opacity: 1; /* Set opacity to 1 when active */
+    animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+  }
+  
+  .portfolio-name {
+    color: black;
+    font-size: 24px;
+  }
+  
+  /* Custom styles for the About Me section */
+  .about-container, .education-container, .skills-container, .projects-container, .contact-container {
+    border: 2px solid #ccc; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding */
+    margin-top: 20px; /* Add margin top for spacing */
+    width: 45%;
+    float: left;
+    height: auto;
+    margin-left: 15px;
+  }
+  
+  /* Custom styles for the Resume button */
+  .resume-button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 18px; /* Adjust font size */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .resume-button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+  
+  /* Custom styles for the Contact section */
+  .contact-container {
+    padding: 20px; 
+    height: auto;
+  }
+  footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    clear: both; 
+    height:18px;
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width:1245px) {
+    .about-container, .education-container, .skills-container, .projects-container, .contact-container,.header,footer{
+      width: 100%; /* Set width to 100% for smaller screens */
+      float: none; /* Remove float */
+      clear: both; /* Clear floats to ensure proper stacking */
+    }
+  }
+  @media(max-width: 990px) {
+    .background-image,footer {
+      width:100% !important;
+    }
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

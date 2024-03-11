@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>My Portfolio</h1>
+</header>
+
+<div class="background-image">
+  <h1 class="portfolio-name">Welcome To,<br>Madhukeshwar's Portfolio</h1>
+  <button class="know-more-button" onclick="showSections()">Know More</button>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div id="about" class="section">
+        <div class="about-container">
+          <h2>About Me</h2>
+          <img src="img.jpeg" alt="profile image" style="border-radius:100%; height:190px;width:180px">
+          <p> <b>Hey I'm Madhukeshwar<br><br></b>I'm a dedicated Information Science and Engineering student with a fervent passion for technology. 
+            Proficient in Python and SQL, I thrive on problem-solving and teamwork, constantly seeking new 
+            challenges to broaden my skills. I'm driven by the desire to innovate and make a meaningful contribution 
+            to the tech industry. Let's connect and explore the endless possibilities together</p>
+          <!-- Add styled resume download button -->
+          <a href="resume.pdf" download="Madhukeshwar_Resume.pdf" class="resume-button">Resume</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div id="education" class="section">
+        <div class="education-container">
+          <h2>Education</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <h3>BE</h3>
+              <p>Information Science and Engineering<br>VTU University<br>8.4 CGPA<br>Year Of Graduation:2024></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Class XII</h3>
+              <p>Science<br>SDM PU College Ujire<br>85%<br>year Of Passing:2020</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Class X</h3>
+              <p>SSEMHS Bhairumbe<br>89%<br>Year Of Passing:2018</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="skills" class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="skills-container">
+          <h2>Skills</h2>
+          <img src="https://logos-world.net/wp-content/uploads/2021/10/Python-Symbol.png" alt="python img" style="height: 100px; width:150px">
+          <img src="https://w1.pngwing.com/pngs/214/316/png-transparent-sql-server-logo-mysql-database-insert-table-microsoft-sql-server-select-ruby-on-rails.png" alt="sql img" style="height: 100px; width:150px">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/001/416/705/small/html5-emblem-orange-shield-and-white-text-vector.jpg" alt="html" style="height: 125px; width:150px">
+          <img src="https://logowik.com/content/uploads/images/123_css3.jpg" alt="css" style="height: 100px; width:150px">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="projects-container">
+          <h2>Projects</h2>
+          <p><b>Theme Park Ticketing System:<br></b>The staff-oriented theme park ticketing system simplifies sales, reservations, and inventory. Features include scheduling tools and access control 
+            integration for efficient operations. Mobile accessibility and customization enhance visitor experience and revenue.</p>
+            <p><b>IT Club Management System:</b><br>Python-based IT club management system streamlines club tasks like event planning, membership tracking, and resource management. It provides intuitive 
+              interfaces and analytics for better decision-making and member involvement.</p>
+            <button class="more-projects"><a href="https://github.com/madhukeshwarh?tab=repositories" class="btn btn-primary" style="text-decoration: none;color:white">More Projects</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="section">
+  <div class="container">
+    <div class="contact-container">
+      <h2>Contact</h2>
+      <p><a href="mailto:madhukeshwar2001@gmail.com"><img src="https://media.istockphoto.com/id/1125279178/vector/mail-line-icon.jpg?s=612x612&w=0&k=20&c=NASq4hMg0b6UP9V0ru4kxL2-J114O3TaakI467Pzjzw=" alt="Email" style="height: 20px; width: 20px;"> <b>Email:</b> madhukeshwar2001@gmail.com</a></p>
+      <p><a href="tel:+918277076294"><img src="https://t4.ftcdn.net/jpg/05/53/74/71/360_F_553747198_0G1isRPpD5ukMwKongDwUVj7icLsqje4.jpg" alt="Phone" style="height: 20px; width: 20px;"> <b>Phone:</b> +91 8277076294</a></p>
+      <p><img src="https://img.freepik.com/premium-vector/square-linkedin-logo-isolated-white-background_469489-892.jpg" alt="LinkedIn" style="height: 20px; width: 20px;"> <b>LinkedIn:</b><a href="https://www.linkedin.com/in/madhukeshwar-hegde-81ba931ba" target="_blank">madhukeshwar_hegde</a></p>
+    </div>
+  </div>
+</div>
+<footer>
+  <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
